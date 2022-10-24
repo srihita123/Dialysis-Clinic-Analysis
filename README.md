@@ -1,6 +1,6 @@
 # Dialysis-Clinic-Analysis
 
-The repository contains the code for the stacked bar graphs (financial sentiment analysis data) which represent the net revenue of all the dialysis clinics in CA before and after the salary for an average physician is deducted. 
+The repository contains the code for the stacked bar graphs (financial sentiment analysis data) which represents the net revenue of all the dialysis clinics in CA before and after the salary for an average physician is deducted. 
 
 The graph was coded in Python using the Pandas library. 
 
