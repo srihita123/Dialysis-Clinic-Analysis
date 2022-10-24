@@ -1,0 +1,21 @@
+
+#Before Graph
+
+from matplotlib.pyplot import axes
+import pandas as pd
+import seaborn as sns
+sns.set()
+
+my_colors = [(0.31,0.36,0.628), (0.496, 0.216, 0.612)]*5
+df = pd.DataFrame([(30,70),(35,65),(24,76),(18,82),(21,79),(19,81),(29,71),(23,77),(22,78),(16,84),(17,83),(21,79),(17,83),(15,85),(16,84),(18,82),(19,81), (19,81), (19, 81),(19,81)], columns=['% of clinics loss', '% of clinics profit'], 
+                  index=['2002', '2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021'])
+df['% of clinics loss'] = -df['% of clinics loss']
+plt = df.plot(kind='bar', stacked=True, color=my_colors, width=1,figsize=(15, 7),linewidth=1.2,xlabel="Year",ylabel="% of clinics that turned a profit or loss");
+
+
+#After Graph
+
+df = pd.DataFrame([(40,60),(43,57),(32,68),(28,72),(32,68),(27,73),(37,63),(30,70),(31,69),(25,75),(23,77),(28,72),(22,78),(22,78),(24,76),(23,77),(26,74),(25,75),(74, 26),(73,27)], columns=['% of clinics loss', '% of clinics profit'], 
+                  index=['2002', '2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021'])
+df['% of clinics loss'] = -df['% of clinics loss']
+plt = df.plot(kind='bar', stacked=True, color=my_colors, width=1,figsize=(15, 7),linewidth=1.2,xlabel="Year",ylabel="% of clinics that turned a profit or loss");
